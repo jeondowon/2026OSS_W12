@@ -19,9 +19,9 @@ export default function App() {
   return (
     <main className="page">
       <header className="hero">
-        <p className="eyebrow">OPEN SOURCE STUDIO · WEEK 12</p>
-        <h1>React Hooks Playground</h1>
-        <p>useEffect · Cleanup · useRef — 4개의 독립된 Lab</p>
+        <p className="eyebrow">OSS Week 12</p>
+        <h1>Dowon Jeon React Practice</h1>
+        <p>click on the tabs to switch between labs</p>
       </header>
 
       <nav className="tabs" aria-label="실습 선택">
@@ -45,7 +45,6 @@ export default function App() {
         </div>
         <CurrentLab />
       </section>
-      <footer>랩을 전환하면 이전 Lab은 언마운트됩니다. Timer Cleanup을 확인해 보세요.</footer>
     </main>
   );
 }
