@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { formatTime } from "../utils/formatTime.js";
 
 // LAB 4 (Slide 17): Timer ID를 useRef로 관리
 export default function Lab4RefTimer() {
@@ -47,7 +48,7 @@ export default function Lab4RefTimer() {
   return (
     <div>
       <p className="status">상태: {running ? "Running" : "Stopped"}</p>
-      <div className="count">{count}</div>
+      <div className="count">{formatTime(count)}</div>
       <div className="controls">
         <button onClick={start} disabled={running}>
           Start
